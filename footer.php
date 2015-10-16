@@ -12,6 +12,8 @@
 ?>
 
 	</div><!-- #content -->
+
+	<?php //THIS A NEW FILE UPDATED ?>
 <div class="PlusFooter"> </div>
 	<?php customFooter(5); ?>
 
