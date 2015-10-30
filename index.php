@@ -56,6 +56,28 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
+			<?php rewind_posts();?>
+
+			<?php
+
+				$arg =  array( 'post_type' => 'post_review', 'posts_per_page'=> 10 );
+				$loop = new WP_Query( $args );
+				while ($loop->have_posts()): $loop->the_post();
+
+					the_title();
+					echo '<div class="entry-content">';
+					the_content();
+					echo '</div>';
+
+			endwhile;
+
+
+
+
+		?>
+
+
+
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>

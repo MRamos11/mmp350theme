@@ -915,3 +915,13 @@ object {
 	font-size: 400px;
 	color: red;
 }
+
+.entry-content{
+	color:blue;
+	font-size: 3em;
+	background-color: red;
+
+}
+
+
+
